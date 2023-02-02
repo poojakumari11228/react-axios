@@ -1,0 +1,56 @@
+.posts {
+    display: flex;
+    padding: 10%;
+
+   
+  }
+.header{
+    background: #282c34;
+    color: white;
+
+}
+  .post{
+    border:solid rgb(43, 46, 43);
+    /*box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);*/
+    align-items:center;
+
+  }
+
+.post:hover {
+    /*box-shadow: 3px 3px 8px hsl(0, 0%, 70%);*/
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+
+}
+
+.header-action{
+    flex: none;
+    margin: 1%;
+    /*padding: 2%;*/
+}
+
+
+body {font-family: sans-serif;}
+p {color: #666;}
+
+h2 {
+    font-size: 2em;
+    color: #e74c3c;
+}
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Card Based Layout - Base styles */
+body {
+    background: #ecf0f1;
+    line-height: 1.4;
+}
+
+.post-details{
+    border:solid rgb(43, 46, 43);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+
+}
