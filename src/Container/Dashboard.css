@@ -1,0 +1,19 @@
+
+.header-action{
+    flex: none;
+    margin: 1%;
+    /*padding: 2%;*/
+}
+
+
+body {font-family: sans-serif;}
+p {color: #666;}
+
+h2 {
+    font-size: 2em;
+    color: #e74c3c;
+}
+body {
+    background: #ecf0f1;
+    line-height: 1.4;
+}

@@ -3,12 +3,14 @@ import Posts from "./Posts";
 import axios from 'axios';
 import PostDetails from "../Component/PostDetails";
 import NewPost from "../Component/New Post/NewPost";
+import './Dashboard.css'
 
 
 function Dashboard() {
 
 
-    const [postsState, setPostsState] = useState([// {id: 1, title: 'OOP', author: 'Pooja Kumari'},
+    const [postsState, setPostsState] = useState([
+        // {id: 1, title: 'OOP', author: 'Pooja Kumari'},
         // {id: 2, title: 'WAA', author: 'Pooja Kumari'},
         // {id: 3, title: 'EA', author: 'Pooja Kumari'}
     ]);
@@ -100,15 +102,16 @@ function Dashboard() {
 
             </div>
 
-            {Object.entries(postDetailState).length !== 0 ? (<div className="post-details"><h1>Details</h1>
-                <PostDetails
-                    id={postDetailState.id}
-                    title={postDetailState.title}
-                    content={postDetailState.content}
-                    author={postDetailState.author}
-                    delete={deletePost}
-                />
-            </div>) : null}
+            {Object.entries(postDetailState).length !== 0 ? (
+                <div className="post-details"><h1>Details</h1>
+                    <PostDetails
+                        id={postDetailState.id}
+                        title={postDetailState.title}
+                        content={postDetailState.content}
+                        author={postDetailState.author}
+                        delete={deletePost}
+                    />
+                </div>) : null}
 
 
         </div>
