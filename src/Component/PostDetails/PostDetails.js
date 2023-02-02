@@ -1,3 +1,4 @@
+import './PostDetails.css'
 const PostDetails = (props) =>{
     console.log(props)
      return(

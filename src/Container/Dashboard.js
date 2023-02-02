@@ -1,7 +1,7 @@
 import {useRef, useState} from "react";
 import Posts from "./Posts";
 import axios from 'axios';
-import PostDetails from "../Component/PostDetails";
+import PostDetails from "../Component/PostDetails/PostDetails";
 import NewPost from "../Component/New Post/NewPost";
 import './Dashboard.css'
 
@@ -73,7 +73,8 @@ function Dashboard() {
         axios.post('http://localhost:8081/api/v1/posts', data)
             .then(response => {
                 alert("New Post Added");
-                fetchPosts();
+                if (Object.entries(postsState).length !== 0)
+                    fetchPosts();
 
             })
             .catch(error => {
